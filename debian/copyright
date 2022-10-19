@@ -1,0 +1,81 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cldr-common
+Source: http://www.unicode.org/Public/cldr/*/cldr-common-*.zip 
+
+Files:     *
+Copyright: 1991-2017 Unicode, Inc.
+License:   MIT
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of the Unicode data files and any associated documentation
+ (the "Data Files") or Unicode software and any associated documentation
+ (the "Software") to deal in the Data Files or Software
+ without restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, and/or sell copies of
+ the Data Files or Software, and to permit persons to whom the Data Files
+ or Software are furnished to do so, provided that either
+ (a) this copyright and permission notice appear with all copies
+ of the Data Files or Software, or
+ (b) this copyright and permission notice appear in associated
+ Documentation.
+ .
+ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+ NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+ DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder
+ shall not be used in advertising or otherwise to promote the sale,
+ use or other dealings in these Data Files or Software without prior
+ written authorization of the copyright holder.
+#######################################################################
+# Note on license
+#
+# There are 3 License files included in this archive.  Namely:
+#  * ICU-LICENSE
+#  * apache-license.txt
+#  * unicode-license.txt
+# But applicable license for the files in this upstream source is
+# unicode-license.txt only. Thus above is correct.
+# 
+# Details of this background:
+# 
+# The cldr data are available as web page under:
+#     http://unicode.org/repos/cldr/trunk/
+# The published ZIP archives are available under:
+#     http://www.unicode.org/Public/cldr/<version>/
+# 
+# There are 3 different ZIP files packing 3 subdirectories with the common
+# license files included at the root of the source tree.  These directories
+# are:
+# 
+#  * common    --> core.zip      (alias: cldr-common-*.zip)    (this package)
+#  * keyboards --> keyboards.zip (alias: cldr-keyboards-*.zip)
+#  * tools     --> tools.zip     (alias: cldr-tools-31.0.1.zip)
+# 
+# The "readme.html" describes license situation of the whole 3
+# subdirectories as:
+# 
+# > Licenses:
+# > 
+# > • Usage of CLDR data and software is governed by the Unicode Terms of Use, a
+# >   copy of which is included as unicode-license.txt.
+# > • Some CLDR tools depend on libraries in tools/java/libs/; use of these
+# >   libraries is governed by separate license agreements.
+# >   □ Use of the ICU libraries is subject to the ICU License, included as
+# >     ICU-LICENSE.
+# >   □ Use of the Guava and Xerces libraries is subject to the Apache License,
+# >     included as apache-license.txt.
+# 
+# Please note that the following files are in the "tools" subdirectory.
+#  * ICU libraries are in tools/java/com/ibm/icu
+#  * the Guava and Xerces libraries are in tools/java/libs
+# 
+# Thus files in common and keyboards directories are simply under
+# unicode-license.txt as quoted above.
+

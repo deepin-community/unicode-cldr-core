@@ -1,0 +1,23 @@
+unicode-cldr-core for Debian
+
+  Upstream Author : Unicode, Inc.
+  URL             : http://cldr.unicode.org/
+                    http://www.unicode.org/Public/cldr/*/cldr-common-*.zip
+                    http://www.unicode.org/Public/cldr/*/core.zip
+  License         : Unicode, Inc. License Agreement
+  Programming Lang: LDML (XML), Plain text
+  Description     : Unicode Common Locale Data Repository
+
+This installs the upstream CLDR data under the common/ directory into the
+/usr/share/unicode/cldr/common directory.
+
+This package doesn't include files under cldr tools directory containing
+programs and libraries thus "Tools Quickstart" in readme.html is not
+applicable.  readme.html is included for the clarification of the
+license situation.
+
+This excludes keyboard layout CLDR data provided in keyboard.zip.  If
+there is an actual use case, I will package it as unicode-cldr-keyboard.
+Please let me know.
+
+ -- Osamu Aoki <osamu@debian.org>  Fri, 29 Dec 2017 21:49:51 +0900

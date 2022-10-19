@@ -1,0 +1,5 @@
+# skip installing unapplicable licenses (See debian/copyright comment)
+#apache-license.txt
+#ICU-LICENSE
+readme.html
+unicode-license.txt
