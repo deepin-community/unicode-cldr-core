@@ -6,7 +6,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 13796 $"/>
+	<version number="$Revision$"/>
 	<transforms>
 		<transform source="am" target="am_Latn" variant="BGN" direction="forward" draft="contributed" alias="Amharic-Latin/BGN am-Latn-t-am-m0-bgn">
 			<tRule><![CDATA[
@@ -36,7 +36,7 @@ $pharyngeal = ‘;
 
 
 # Use this $wordBoundary until bug 2034 is fixed in ICU:
-# http://bugs.icu-project.org/trac/ticket/2034
+# https://unicode-org.atlassian.net/browse/ICU-2034
 $wordBoundary =  [^[:L:][:M:][:N:]] ;
 
 

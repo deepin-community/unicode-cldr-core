@@ -1,3 +1,26 @@
+unicode-cldr-core (46-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update to new upstream version. Closes: #1089074
+
+ -- Bastian Germann <bage@debian.org>  Thu, 05 Dec 2024 19:22:30 +0000
+
+unicode-cldr-core (44-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update to new upstream version. Closes: #1057365
+
+ -- Bastian Germann <bage@debian.org>  Tue, 19 Dec 2023 21:57:24 +0000
+
+unicode-cldr-core (41-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Replace debian/getorigtar with debian/watch.
+  * d/copyright: Rename wrongly named Unicode-DFS-2016 license.
+  * Do not install docs from the root.
+
+ -- Bastian Germann <bage@debian.org>  Tue, 27 Sep 2022 18:56:33 +0200
+
 unicode-cldr-core (32.0.1-1.1) unstable; urgency=medium
 
   * Non maintainer upload by the Reproducible Builds team.

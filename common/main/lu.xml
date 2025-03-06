@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2024 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
-Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+SPDX-License-Identifier: Unicode-3.0
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision$"/>
 		<language type="lu"/>
 	</identity>
 	<localeDisplayNames>
@@ -147,7 +147,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="IE">Irelande</territory>
 			<territory type="IL">Isirayele</territory>
 			<territory type="IN">Inde</territory>
-			<territory type="IO">Lutanda lwa Angeletele ku mbu wa Indiya</territory>
+			<territory type="IO" draft="provisional">Lutanda lwa Angeletele ku mbu wa Indiya</territory>
 			<territory type="IQ">Iraki</territory>
 			<territory type="IR">Ira</territory>
 			<territory type="IS">Isilande</territory>
@@ -182,7 +182,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="MD">Molidavi</territory>
 			<territory type="MG">Madagasikari</territory>
 			<territory type="MH">Lutanda lua Marishale</territory>
-			<territory type="MK">Masedwane</territory>
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Myamare</territory>
 			<territory type="MN">Mongoli</territory>
@@ -284,17 +283,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</territories>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á à b c d e é è ɛ {ɛ\u0301} {ɛ\u0300} f h i í ì j k l m n {ng} {ny} o ó ò ɔ {ɔ\u0301} {ɔ\u0300} p {ph} q s {shi} t u ú ù v w y z]</exemplarCharacters>
+		<exemplarCharacters>[aáà b c d eéè ɛ{ɛ́}{ɛ̀} f h iíì j k l m n {ng} {ny} oóò ɔ{ɔ́}{ɔ̀} p {ph} q s {shi} t uúù v w y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[g r x]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F H I J K L M N O P Q S T U V W Y Z]</exemplarCharacters>
-		<exemplarCharacters type="numbers">[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 	</characters>
-	<delimiters>
-		<quotationStart>“</quotationStart>
-		<quotationEnd>”</quotationEnd>
-		<alternateQuotationStart>‘</alternateQuotationStart>
-		<alternateQuotationEnd>’</alternateQuotationEnd>
-	</delimiters>
 	<dates>
 		<calendars>
 			<calendar type="generic">
@@ -317,21 +309,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<dateFormatLength type="short">
 						<dateFormat>
 							<pattern>d/M/y GGGGG</pattern>
+							<datetimeSkeleton>GGGGGyMd</datetimeSkeleton>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Md">d/M</dateFormatItem>
 						<dateFormatItem id="MEd">E d/M</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
 						<dateFormatItem id="ms">m:ss</dateFormatItem>
@@ -451,10 +439,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="am">Dinda</dayPeriod>
 							<dayPeriod type="pm">Dilolo</dayPeriod>
 						</dayPeriodWidth>
-						<dayPeriodWidth type="wide">
-							<dayPeriod type="am">Dinda</dayPeriod>
-							<dayPeriod type="pm">Dilolo</dayPeriod>
-						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
 				<eras>
@@ -486,6 +470,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<dateFormatLength type="short">
 						<dateFormat>
 							<pattern>d/M/y</pattern>
+							<datetimeSkeleton>yMd</datetimeSkeleton>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -513,20 +498,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</timeFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Md">d/M</dateFormatItem>
 						<dateFormatItem id="MEd">E d/M</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
 						<dateFormatItem id="ms">m:ss</dateFormatItem>
-						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">E d/M/y</dateFormatItem>
@@ -583,17 +562,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<decimal>,</decimal>
 			<group>.</group>
 		</symbols>
-		<decimalFormats numberSystem="latn">
-			<decimalFormatLength>
-				<decimalFormat>
-					<pattern>#,##0.###</pattern>
-				</decimalFormat>
-			</decimalFormatLength>
-		</decimalFormats>
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
 					<pattern>#,##0.00¤</pattern>
+					<pattern alt="alphaNextToNumber" draft="provisional">#,##0.00 ¤</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
@@ -706,6 +679,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>Nfalanga wa Madagasikare</displayName>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ugwiya wa Moritani (1973–2017)</displayName>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ugwiya wa Moritani</displayName>
 			</currency>
 			<currency type="MUR">
@@ -741,13 +717,19 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<currency type="SHP">
 				<displayName>Pauni wa Santu Elena</displayName>
 			</currency>
-			<currency type="SLL">
+			<currency type="SLE">
 				<displayName>Leone</displayName>
+			</currency>
+			<currency type="SLL">
+				<displayName>Leone (1964—2022)</displayName>
 			</currency>
 			<currency type="SOS">
 				<displayName>Nshili wa Somali</displayName>
 			</currency>
 			<currency type="STD">
+				<displayName>Dobra wa Sao Tome ne Presipe (1977–2017)</displayName>
+			</currency>
+			<currency type="STN">
 				<displayName>Dobra wa Sao Tome ne Presipe</displayName>
 			</currency>
 			<currency type="SZL">

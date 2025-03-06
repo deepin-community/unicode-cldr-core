@@ -6,7 +6,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 12263 $"/>
+	<version number="$Revision$"/>
 	<transforms>
 		<transform source="Hebr" target="Latn" direction="both" alias="Hebrew-Latin und-Latn-t-und-hebr" backwardAlias="Latin-Hebrew und-Hebr-t-und-latn">
 			<tRule><![CDATA[
@@ -29,8 +29,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 #
 # For more information, see:
 #   http://icu.sourceforge.net/userguide/Transform.html
-:: [[:Hebrew:] [:^ccc=0:] [ְ-ֹֻ-ּׁ-ׂℵ-ℸֿ̄] - [ֽ]] ;
+:: [[־׳״][:Hebrew:] [:^ccc=0:] [ְ-ֹֻ-ּׁ-ׂℵ-ℸֿ̄] - [ֽ]] ;
 :: nfkd (nfc) ;
+
+׳ ↔ '′';
+״ ↔ '″';
+־ ↔ '-';
+
 $letterAfter = [:M:]* [:L:] ;
 # move longer items here to avoid masking
 ח ↔ ẖ ;
@@ -95,7 +100,7 @@ $above = [^[:ccc=0:][:ccc=230:]]*;
 כס ← x ;
 :: (lower);
 :: nfc (nfd) ;
-:: ([[:Latin:] [:^ccc=0:] [ʻ-ʼ̀-̧̱̂̇̌̀-́    ̄ ]]);
+:: ([[-′″][:Latin:] [:^ccc=0:] [ʻ-ʼ̀-̧̱̂̇̌̀-́    ̄ ]]);
 			]]></tRule>
 		</transform>
 	</transforms>
