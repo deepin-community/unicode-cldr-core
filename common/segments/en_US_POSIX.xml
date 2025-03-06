@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!--
-Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+<!-- Copyright © 1991-2024 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
+SPDX-License-Identifier: Unicode-3.0
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12925 $"/>
+		<version number="$Revision$"/>
 		<language type="en"/>
 		<territory type="US"/>
 		<variant type="POSIX"/>
@@ -16,11 +16,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<segmentation type="WordBreak">
 			<variables>
 				<variable id="$MidNumLet">[[$MidNumLet]-[.]]</variable>
-				<variable id="$MidLetter">[[$MidLetter]-[\:]]</variable>
 				<variable id="$MidNum">[[$MidNum] [.]]</variable>
 			</variables>
 		</segmentation>
 	</segmentations>
 </ldml>
-
-

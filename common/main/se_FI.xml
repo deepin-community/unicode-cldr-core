@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2024 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
-Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+SPDX-License-Identifier: Unicode-3.0
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13706 $"/>
+		<version number="$Revision$"/>
 		<language type="se"/>
 		<territory type="FI"/>
 	</identity>
@@ -22,9 +22,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="en_AU">austrálialaš eaŋgalsgiella</language>
 			<language type="en_CA">kanádalaš eaŋgalsgiella</language>
 			<language type="en_GB">brihttalaš eaŋgalsgiella</language>
-			<language type="en_GB" alt="short">brihttalaš eaŋgalsgiella</language>
 			<language type="en_US">amerihkálaš eaŋgalsgiella</language>
-			<language type="en_US" alt="short">amerihkálaš eaŋgalsgiella</language>
 			<language type="es_419">latiinna-amerihkalaš spánskkagiella</language>
 			<language type="es_ES">espánjalaš spánskkagiella</language>
 			<language type="es_MX">meksikolaš spánskkagiella</language>
@@ -49,9 +47,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Arab">arábalaš</script>
 			<script type="Hani">kiinnálaš</script>
 			<script type="Hans">álkes kiinnálaš</script>
-			<script type="Hans" alt="stand-alone">álkes kiinnálaš</script>
 			<script type="Hant">árbevirolaš kiinnálaš</script>
-			<script type="Hant" alt="stand-alone">árbevirolaš kiinnálaš</script>
 			<script type="Zxxx">orrut čállojuvvot</script>
 			<script type="Zzzz">dovdameahttun čállin</script>
 		</scripts>
@@ -86,7 +82,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="calendar" type="ethiopic">etiohpalaš kaleandar</type>
 			<type key="calendar" type="ethiopic-amete-alem">etiohpalaš-amete-alem kaleandar</type>
 			<type key="calendar" type="gregorian">gregorialaš kalendar</type>
-			<type key="numbers" type="fullwide">fullwide</type>
 		</types>
 		<codePatterns>
 			<codePattern type="script">čállin: {0}</codePattern>
@@ -114,6 +109,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<dateFormatLength type="short">
 						<dateFormat>
 							<pattern>d.M.y GGGGG</pattern>
+							<datetimeSkeleton>GGGGGyMd</datetimeSkeleton>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -143,57 +139,57 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatItem id="M">
-							<greatestDifference id="M">M – M</greatestDifference>
+							<greatestDifference id="M">M – M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
 							<greatestDifference id="d">d.M –d.M</greatestDifference>
-							<greatestDifference id="M">d.M – d.M</greatestDifference>
+							<greatestDifference id="M">d.M – d.M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d">E d.M – E d.M</greatestDifference>
-							<greatestDifference id="M">E d.M – E d.M</greatestDifference>
+							<greatestDifference id="d">E d.M – E d.M</greatestDifference>
+							<greatestDifference id="M">E d.M – E d.M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
-							<greatestDifference id="M">MMM – MMM</greatestDifference>
+							<greatestDifference id="M">MMM – MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d">d–d MMM</greatestDifference>
-							<greatestDifference id="M">d MMM – d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E d MMM – E d MMM</greatestDifference>
-							<greatestDifference id="M">E d MMM – E d MMM</greatestDifference>
+							<greatestDifference id="d">E d MMM – E d MMM</greatestDifference>
+							<greatestDifference id="M">E d MMM – E d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M.y – M.y GGGG</greatestDifference>
-							<greatestDifference id="y">M.y – M.y GGGG</greatestDifference>
+							<greatestDifference id="M">M.y – M.y GGGG</greatestDifference>
+							<greatestDifference id="y">M.y – M.y GGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d.M.y – d.M.y GGGG</greatestDifference>
-							<greatestDifference id="M">d.M.y – d.M.y GGGG</greatestDifference>
-							<greatestDifference id="y">d.M.y – d.M.y GGGG</greatestDifference>
+							<greatestDifference id="d">d.M.y – d.M.y GGGG</greatestDifference>
+							<greatestDifference id="M">d.M.y – d.M.y GGGG</greatestDifference>
+							<greatestDifference id="y">d.M.y – d.M.y GGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E d.M.y – E d.M.y GGGG</greatestDifference>
-							<greatestDifference id="M">E d.M.y – E.d.M.y GGGG</greatestDifference>
-							<greatestDifference id="y">E d.M.y – E d.M.y GGGG</greatestDifference>
+							<greatestDifference id="d">E d.M.y – E d.M.y GGGG</greatestDifference>
+							<greatestDifference id="M">E d.M.y – E.d.M.y GGGG</greatestDifference>
+							<greatestDifference id="y">E d.M.y – E d.M.y GGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d–d.MMM y G</greatestDifference>
-							<greatestDifference id="M">d.MMM – d.MMM y G</greatestDifference>
-							<greatestDifference id="y">d MMM y – d MMM y G</greatestDifference>
+							<greatestDifference id="M">d.MMM – d.MMM y G</greatestDifference>
+							<greatestDifference id="y">d MMM y – d MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E d MMM y – E d MMM y G</greatestDifference>
-							<greatestDifference id="M">E d MMM y – E d MMM y G</greatestDifference>
-							<greatestDifference id="y">E d MMM y – E d MMM y G</greatestDifference>
+							<greatestDifference id="d">E d MMM y – E d MMM y G</greatestDifference>
+							<greatestDifference id="M">E d MMM y – E d MMM y G</greatestDifference>
+							<greatestDifference id="y">E d MMM y – E d MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>
-							<greatestDifference id="y">MMMM y – MMMM y G</greatestDifference>
+							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -202,34 +198,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
-							<month type="1">ođđj</month>
-							<month type="2">guov</month>
-							<month type="3">njuk</month>
 							<month type="4">cuoŋ</month>
-							<month type="5">mies</month>
-							<month type="6">geas</month>
-							<month type="7">suoi</month>
-							<month type="8">borg</month>
-							<month type="9">čakč</month>
-							<month type="10">golg</month>
-							<month type="11">skáb</month>
-							<month type="12">juov</month>
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
 						<monthWidth type="abbreviated">
-							<month type="1">ođđj</month>
-							<month type="2">guov</month>
-							<month type="3">njuk</month>
 							<month type="4">cuoŋ</month>
-							<month type="5">mies</month>
-							<month type="6">geas</month>
-							<month type="7">suoi</month>
-							<month type="8">borg</month>
-							<month type="9">čakč</month>
-							<month type="10">golg</month>
-							<month type="11">skáb</month>
-							<month type="12">juov</month>
 						</monthWidth>
 					</monthContext>
 				</months>
@@ -319,7 +293,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					</quarterContext>
 					<quarterContext type="stand-alone">
 						<quarterWidth type="abbreviated">
-							<quarter type="1">Q1</quarter>
+							<quarter type="1">1Q</quarter>
 							<quarter type="2">2Q</quarter>
 							<quarter type="3">3Q</quarter>
 							<quarter type="4">4Q</quarter>
@@ -410,9 +384,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
 						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMW" count="one">MMMM:a 'vahkku' W</dateFormatItem>
-						<dateFormatItem id="MMMMW" count="two">MMMM:a 'vahkku' W</dateFormatItem>
-						<dateFormatItem id="MMMMW" count="other">MMM:a 'vahkku' W</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="one">MMMM:'a' 'vahkku' W</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="two">MMMM:'a' 'vahkku' W</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="other">MMMM:'a' 'vahkku' W</dateFormatItem>
 						<dateFormatItem id="yM">MM.y</dateFormatItem>
 						<dateFormatItem id="yMd">dd.MM.y</dateFormatItem>
 						<dateFormatItem id="yMEd">E dd.MM.y</dateFormatItem>
@@ -448,35 +422,35 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M">M.y–M.y</greatestDifference>
-							<greatestDifference id="y">M.y – M.y</greatestDifference>
+							<greatestDifference id="y">M.y – M.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d.M.y – d.M.y</greatestDifference>
-							<greatestDifference id="M">d.M.y – d.M.y</greatestDifference>
-							<greatestDifference id="y">d.M.y – d.M.y</greatestDifference>
+							<greatestDifference id="d">d.M.y – d.M.y</greatestDifference>
+							<greatestDifference id="M">d.M.y – d.M.y</greatestDifference>
+							<greatestDifference id="y">d.M.y – d.M.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E d.M.y – E d.M.y</greatestDifference>
-							<greatestDifference id="M">E d.M.y – E d.M.y</greatestDifference>
-							<greatestDifference id="y">E d.M.y – E d.M.y</greatestDifference>
+							<greatestDifference id="d">E d.M.y – E d.M.y</greatestDifference>
+							<greatestDifference id="M">E d.M.y – E d.M.y</greatestDifference>
+							<greatestDifference id="y">E d.M.y – E d.M.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M">MMM – MMM y</greatestDifference>
-							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
+							<greatestDifference id="M">MMM – MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d–d MMM y</greatestDifference>
-							<greatestDifference id="M">d MMM – d MMM y</greatestDifference>
-							<greatestDifference id="y">d MMM y – d MMM y</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM y</greatestDifference>
+							<greatestDifference id="y">d MMM y – d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E d MMM – E d MMM y</greatestDifference>
-							<greatestDifference id="M">E d MMM – E d MMM y</greatestDifference>
-							<greatestDifference id="y">E d MMM y – E d MMM y</greatestDifference>
+							<greatestDifference id="d">E d MMM – E d MMM y</greatestDifference>
+							<greatestDifference id="M">E d MMM – E d MMM y</greatestDifference>
+							<greatestDifference id="y">E d MMM y – E d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">MMMM – MMMM y</greatestDifference>
-							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="M">MMMM – MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -487,9 +461,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>áigodat</displayName>
 			</field>
 			<field type="era-short">
-				<displayName>áig.</displayName>
-			</field>
-			<field type="era-narrow">
 				<displayName>áig.</displayName>
 			</field>
 			<field type="year">
@@ -522,7 +493,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="year-narrow">
-				<displayName>j.</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} jagi siste</relativeTimePattern>
 					<relativeTimePattern count="two">{0} jagi siste</relativeTimePattern>
@@ -565,11 +535,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="quarter-narrow">
 				<displayName>jahkenjealjádas</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">boahtte {0} njealj.j.</relativeTimePattern>
-					<relativeTimePattern count="two">boahtte {0} njealjádasjagi</relativeTimePattern>
-					<relativeTimePattern count="other">boahtte {0} njealj.j.</relativeTimePattern>
-				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} njealj.j. dás ovdal</relativeTimePattern>
 					<relativeTimePattern count="two">-{0} njealjádasjagi dás ovdal</relativeTimePattern>
@@ -593,28 +558,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="month-short">
 				<displayName>m.</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} mánu siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} mánu siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} mánu siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} mánnu dás ovdal</relativeTimePattern>
-					<relativeTimePattern count="two">{0} mánu dás ovdal</relativeTimePattern>
-					<relativeTimePattern count="other">{0} mánu dás ovdal</relativeTimePattern>
-				</relativeTime>
 			</field>
 			<field type="month-narrow">
-				<displayName>m.</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} mánu geahčen</relativeTimePattern>
 					<relativeTimePattern count="two">{0} mánu geahčen</relativeTimePattern>
 					<relativeTimePattern count="other">{0} mánu geahčen</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} mánnu dás ovdal</relativeTimePattern>
-					<relativeTimePattern count="two">{0} mánu dás ovdal</relativeTimePattern>
-					<relativeTimePattern count="other">{0} mánu dás ovdal</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -646,10 +595,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="two">{0} vahku dás ovdal</relativeTimePattern>
 					<relativeTimePattern count="other">{0} v(k) dás ovdal</relativeTimePattern>
 				</relativeTime>
-				<relativePeriod>{0} vahkku</relativePeriod>
 			</field>
 			<field type="week-narrow">
-				<displayName>v(k)</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} v(k) geahčen</relativeTimePattern>
 					<relativeTimePattern count="two">{0} v(k) geahčen</relativeTimePattern>
@@ -660,7 +607,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="two">{0} vahku dás ovdal</relativeTimePattern>
 					<relativeTimePattern count="other">{0} v(k) dás ovdal</relativeTimePattern>
 				</relativeTime>
-				<relativePeriod>{0} vahkku</relativePeriod>
 			</field>
 			<field type="weekOfMonth">
 				<displayName>mánu vahkku</displayName>
@@ -668,14 +614,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="weekOfMonth-short">
 				<displayName>m. v(k)</displayName>
 			</field>
-			<field type="weekOfMonth-narrow">
-				<displayName>m. v(k)</displayName>
-			</field>
 			<field type="day">
 				<relative type="-2">ovddet beaivvi</relative>
-				<relative type="-1">ikte</relative>
-				<relative type="0">odne</relative>
-				<relative type="1">ihttin</relative>
 				<relative type="2">don beaivve</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} beaivve siste</relativeTimePattern>
@@ -690,37 +630,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="day-short">
 				<displayName>b.</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} beaivve siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} beaivve siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} beaivve siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">ikte</relativeTimePattern>
-					<relativeTimePattern count="two">ovddet beaivve</relativeTimePattern>
-					<relativeTimePattern count="other">{0} beaivve dás ovdal</relativeTimePattern>
-				</relativeTime>
-			</field>
-			<field type="day-narrow">
-				<displayName>b.</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} beaivve siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} beaivve siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} beaivve siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">ikte</relativeTimePattern>
-					<relativeTimePattern count="two">ovddet beaivve</relativeTimePattern>
-					<relativeTimePattern count="other">{0} beaivve dás ovdal</relativeTimePattern>
-				</relativeTime>
 			</field>
 			<field type="dayOfYear">
 				<displayName>jagi beaivi</displayName>
 			</field>
 			<field type="dayOfYear-short">
-				<displayName>j. beaivi</displayName>
-			</field>
-			<field type="dayOfYear-narrow">
 				<displayName>j. beaivi</displayName>
 			</field>
 			<field type="weekday">
@@ -729,16 +643,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="weekday-short">
 				<displayName>v(k) beaivi</displayName>
 			</field>
-			<field type="weekday-narrow">
-				<displayName>v(k) beaivi</displayName>
-			</field>
 			<field type="weekdayOfMonth">
 				<displayName>mánu vahkkobeaivi</displayName>
 			</field>
 			<field type="weekdayOfMonth-short">
-				<displayName>m. v(k)b.</displayName>
-			</field>
-			<field type="weekdayOfMonth-narrow">
 				<displayName>m. v(k)b.</displayName>
 			</field>
 			<field type="sun">
@@ -757,6 +665,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="sun-short">
+				<relative type="-1">mannan so</relative>
+				<relative type="0">dán so</relative>
+				<relative type="1">boahtte so</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">boahtte so</relativeTimePattern>
 					<relativeTimePattern count="two">maŋit sotnabeaivve</relativeTimePattern>
@@ -775,7 +686,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} boahtte so</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan so</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan so</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet sotnabeaivve</relativeTimePattern>
 					<relativeTimePattern count="other">{0} so dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -796,6 +707,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="mon-short">
+				<relative type="-1">mannan má</relative>
+				<relative type="0">dán má</relative>
+				<relative type="1">boahtte má</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} boahtte má</relativeTimePattern>
 					<relativeTimePattern count="two">{0} boahtte mánnodaga</relativeTimePattern>
@@ -808,13 +722,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="mon-narrow">
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} boahtte má</relativeTimePattern>
-					<relativeTimePattern count="two">{0} boahtte mánnodaga</relativeTimePattern>
-					<relativeTimePattern count="other">{0} boahtte má</relativeTimePattern>
-				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan má</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan má</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet má</relativeTimePattern>
 					<relativeTimePattern count="other">{0} má dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -835,6 +744,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="tue-short">
+				<relative type="-1">mannan di</relative>
+				<relative type="0">dán di</relative>
+				<relative type="1">boahtte di</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">boahtte di</relativeTimePattern>
 					<relativeTimePattern count="two">{0} boahtte disdaga</relativeTimePattern>
@@ -848,12 +760,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="tue-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">boahtte di</relativeTimePattern>
+					<relativeTimePattern count="one">{0} boahtte di</relativeTimePattern>
 					<relativeTimePattern count="two">{0} boahtte disdaga</relativeTimePattern>
 					<relativeTimePattern count="other">{0} boahtte di</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan di</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan di</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet disdaga</relativeTimePattern>
 					<relativeTimePattern count="other">{0} di dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -874,6 +786,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="wed-short">
+				<relative type="-1">mannan ga</relative>
+				<relative type="0">dán ga</relative>
+				<relative type="1">boahtte ga</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">boahtte ga</relativeTimePattern>
 					<relativeTimePattern count="two">{0} boahtte gaskavahku</relativeTimePattern>
@@ -887,12 +802,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="wed-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">boahtte ga</relativeTimePattern>
+					<relativeTimePattern count="one">{0} boahtte ga</relativeTimePattern>
 					<relativeTimePattern count="two">{0} boahtte gaskavahku</relativeTimePattern>
 					<relativeTimePattern count="other">{0} boahtte ga</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan ga</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan ga</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet gaskavahku</relativeTimePattern>
 					<relativeTimePattern count="other">{0} ga dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -913,6 +828,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="thu-short">
+				<relative type="-1">mannan du</relative>
+				<relative type="0">dán du</relative>
+				<relative type="1">boahtte du</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">boahtte du</relativeTimePattern>
 					<relativeTimePattern count="two">+{0} boahtte duorastaga</relativeTimePattern>
@@ -926,12 +844,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="thu-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">boahtte du</relativeTimePattern>
+					<relativeTimePattern count="one">{0} boahtte du</relativeTimePattern>
 					<relativeTimePattern count="two">+{0} boahtte duorastaga</relativeTimePattern>
 					<relativeTimePattern count="other">+{0} boahtte du</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan du</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan du</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet duorastaga</relativeTimePattern>
 					<relativeTimePattern count="other">{0} du dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -952,6 +870,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="fri-short">
+				<relative type="-1">mannan be</relative>
+				<relative type="0">dán be</relative>
+				<relative type="1">boahtte be</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">boahtte be</relativeTimePattern>
 					<relativeTimePattern count="two">boahtte {0} bearjadaga</relativeTimePattern>
@@ -965,12 +886,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="fri-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">boahtte be</relativeTimePattern>
+					<relativeTimePattern count="one">boahtte {0} be</relativeTimePattern>
 					<relativeTimePattern count="two">boahtte {0} bearjadaga</relativeTimePattern>
 					<relativeTimePattern count="other">boahtte {0} be</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan be</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan be</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet bearjadaga</relativeTimePattern>
 					<relativeTimePattern count="other">-{0} be dás ovdal</relativeTimePattern>
 				</relativeTime>
@@ -991,6 +912,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="sat-short">
+				<relative type="-1">mannan lá</relative>
+				<relative type="0">dán lá</relative>
+				<relative type="1">boahtte lá</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">+{0} boahtte lá</relativeTimePattern>
 					<relativeTimePattern count="two">boahtte {0} lá</relativeTimePattern>
@@ -1003,19 +927,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="sat-narrow">
-				<relativeTime type="future">
-					<relativeTimePattern count="one">+{0} boahtte lá</relativeTimePattern>
-					<relativeTimePattern count="two">boahtte {0} lá</relativeTimePattern>
-					<relativeTimePattern count="other">boahtte {0} lá</relativeTimePattern>
-				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">mannan lá</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mannan lá</relativeTimePattern>
 					<relativeTimePattern count="two">ovddet lá</relativeTimePattern>
 					<relativeTimePattern count="other">-{0} lá dás ovdal</relativeTimePattern>
 				</relativeTime>
-			</field>
-			<field type="dayperiod-short">
-				<displayName>ib/eb</displayName>
 			</field>
 			<field type="dayperiod">
 				<displayName>ib/eb</displayName>
@@ -1034,19 +950,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="hour-short">
-				<displayName>dmu</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} dmu siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} diimmu siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} dmu siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} dmu áigi</relativeTimePattern>
-					<relativeTimePattern count="two">{0} diimmu áigi</relativeTimePattern>
-					<relativeTimePattern count="other">{0} dmu áigi</relativeTimePattern>
-				</relativeTime>
-			</field>
-			<field type="hour-narrow">
 				<displayName>dmu</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} dmu siste</relativeTimePattern>
@@ -1085,19 +988,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} min. áigi</relativeTimePattern>
 				</relativeTime>
 			</field>
-			<field type="minute-narrow">
-				<displayName>min.</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} min. siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} minuhta siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} min. siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} min. áigi</relativeTimePattern>
-					<relativeTimePattern count="two">{0} minuhta áigi</relativeTimePattern>
-					<relativeTimePattern count="other">{0} min. áigi</relativeTimePattern>
-				</relativeTime>
-			</field>
 			<field type="second">
 				<relative type="0">dál</relative>
 				<relativeTime type="future">
@@ -1124,23 +1014,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} sek. áigi</relativeTimePattern>
 				</relativeTime>
 			</field>
-			<field type="second-narrow">
-				<displayName>sek.</displayName>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} sek. siste</relativeTimePattern>
-					<relativeTimePattern count="two">{0} sekundda siste</relativeTimePattern>
-					<relativeTimePattern count="other">{0} sek. siste</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} sek. áigi</relativeTimePattern>
-					<relativeTimePattern count="two">{0} sekundda áigi</relativeTimePattern>
-					<relativeTimePattern count="other">{0} sek. áigi</relativeTimePattern>
-				</relativeTime>
-			</field>
 			<field type="zone-short">
-				<displayName>á.av.</displayName>
-			</field>
-			<field type="zone-narrow">
 				<displayName>á.av.</displayName>
 			</field>
 		</fields>
@@ -1509,13 +1383,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Kiinná geasseáigi</daylight>
 				</long>
 			</metazone>
-			<metazone type="Choibalsan">
-				<long>
-					<generic>Choibolsana áigi</generic>
-					<standard>Choibolsana dálveáigi</standard>
-					<daylight>Choibolsana geasseáigi</daylight>
-				</long>
-			</metazone>
 			<metazone type="Christmas">
 				<long>
 					<standard>Juovlasullo áigi</standard>
@@ -1800,11 +1667,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Lord Howe geasseáigi</daylight>
 				</long>
 			</metazone>
-			<metazone type="Macquarie">
-				<long>
-					<standard>MacQuarie sullo áigi</standard>
-				</long>
-			</metazone>
 			<metazone type="Magadan">
 				<long>
 					<generic>Magadana áigi</generic>
@@ -1842,13 +1704,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<metazone type="Mawson">
 				<long>
 					<standard>Mawsona áigi</standard>
-				</long>
-			</metazone>
-			<metazone type="Mexico_Northwest">
-				<long>
-					<generic>Oarjedavvi-Meksiko áigi</generic>
-					<standard>Oarjedavvi-Meksiko dálveáigi</standard>
-					<daylight>Oarjedavvi-Meksiko geasseáigi</daylight>
 				</long>
 			</metazone>
 			<metazone type="Mexico_Pacific">
@@ -2175,4 +2030,41 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 		</timeZoneNames>
 	</dates>
+	<numbers>
+		<decimalFormats numberSystem="latn">
+			<decimalFormatLength type="long">
+				<decimalFormat>
+					<pattern type="1000" count="two">0 dt</pattern>
+					<pattern type="1000" count="other">0 duháhat</pattern>
+					<pattern type="10000" count="one">00 duháhat</pattern>
+					<pattern type="10000" count="two">00 dt</pattern>
+					<pattern type="100000" count="one">000 duháhat</pattern>
+					<pattern type="100000" count="two">000 dt</pattern>
+					<pattern type="1000000" count="two">0 mn</pattern>
+					<pattern type="10000000" count="one">00 miljonat</pattern>
+					<pattern type="10000000" count="two">00 mn</pattern>
+					<pattern type="100000000" count="one">000 miljonat</pattern>
+					<pattern type="100000000" count="two">000 mn</pattern>
+					<pattern type="1000000000" count="one">0 miljárda</pattern>
+					<pattern type="1000000000" count="two">0 miljárdat</pattern>
+					<pattern type="1000000000" count="other">0 miljárdat</pattern>
+					<pattern type="10000000000" count="one">00 miljárdat</pattern>
+					<pattern type="10000000000" count="two">00 md</pattern>
+					<pattern type="10000000000" count="other">00 miljárdat</pattern>
+					<pattern type="100000000000" count="one">000 miljárdat</pattern>
+					<pattern type="100000000000" count="two">000 md</pattern>
+					<pattern type="100000000000" count="other">000 miljárdat</pattern>
+					<pattern type="1000000000000" count="one">0 biljovdna</pattern>
+					<pattern type="1000000000000" count="two">0 bn</pattern>
+					<pattern type="1000000000000" count="other">0 biljovdnat</pattern>
+					<pattern type="10000000000000" count="one">00 biljovdnat</pattern>
+					<pattern type="10000000000000" count="two">00 bn</pattern>
+					<pattern type="10000000000000" count="other">00 biljovdnat</pattern>
+					<pattern type="100000000000000" count="one">000 biljovdnat</pattern>
+					<pattern type="100000000000000" count="two">000 bn</pattern>
+					<pattern type="100000000000000" count="other">000 biljovdnat</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+		</decimalFormats>
+	</numbers>
 </ldml>

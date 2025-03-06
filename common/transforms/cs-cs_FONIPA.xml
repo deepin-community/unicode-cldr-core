@@ -6,11 +6,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 12243 $"/>
+	<version number="$Revision$"/>
 	<transforms>
 		<transform source="cs" target="cs_FONIPA" direction="forward" alias="cs-fonipa-t-cs">
 			<tRule>
-# Tranformation from Czech to Czech in IPA transcription (cs_FONIPA).
+# Transformation from Czech to Czech in IPA transcription (cs_FONIPA).
 # The transcription is not fully phonemic since we mark allophonic variations
 # of /m/, /n/, /x/ and /ɦ/.
 #

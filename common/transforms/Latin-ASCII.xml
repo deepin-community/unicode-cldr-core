@@ -6,9 +6,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 13666 $"/>
+	<version number="$Revision$"/>
 	<transforms>
-		<transform source="Latin" target="ASCII" direction="both" alias="und-t-d0-ascii und-Latn-t-s0-ascii">
+		<transform source="Latin" target="ASCII" direction="both" alias="und-t-und-latn-d0-ascii" backwardAlias="und-Latn-t-s0-ascii">
 			<tRule><![CDATA[
 # This handles only Latin, Common, and IDEOGRAPHIC NUMBER ZERO (Han).
 #
@@ -41,7 +41,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 Đ → D ; # 0110;LATIN CAPITAL LETTER D WITH STROKE
 đ → d ; # 0111;LATIN SMALL LETTER D WITH STROKE
 Ħ → H ; # 0126;LATIN CAPITAL LETTER H WITH STROKE
-ħ → h ; # 0126;LATIN SMALL LETTER H WITH STROKE
+ħ → h ; # 0127;LATIN SMALL LETTER H WITH STROKE
 ı → i ; # 0131;LATIN SMALL LETTER DOTLESS I
 Ĳ → IJ ; # 0132;LATIN CAPITAL LIGATURE IJ (compat)
 ĳ → ij ; # 0133;LATIN SMALL LIGATURE IJ (compat)
@@ -240,6 +240,105 @@ For terms of use, see http://www.unicode.org/copyright.html
 ỽ → v ; # 1EFD;LATIN SMALL LETTER MIDDLE-WELSH V
 Ỿ → Y ; # 1EFE;LATIN CAPITAL LETTER Y WITH LOOP
 ỿ → y ; # 1EFF;LATIN SMALL LETTER Y WITH LOOP
+# Latin extended C and D (later addition)
+Ⱡ → L ; # 2C60;LATIN CAPITAL LETTER L WITH DOUBLE BAR
+ⱡ → l ; # 2C61;LATIN SMALL LETTER L WITH DOUBLE BAR
+Ɫ → L ; # 2C62;LATIN CAPITAL LETTER L WITH MIDDLE TILDE
+Ᵽ → P ; # 2C63;LATIN CAPITAL LETTER P WITH STROKE
+Ɽ → R ; # 2C64;LATIN CAPITAL LETTER R WITH TAIL
+ⱥ → a ; # 2C65;LATIN SMALL LETTER A WITH STROKE
+ⱦ → t ; # 2C66;LATIN SMALL LETTER T WITH DIAGONAL STROKE
+Ⱨ → H ; # 2C67;LATIN CAPITAL LETTER H WITH DESCENDER
+ⱨ → h ; # 2C68;LATIN SMALL LETTER H WITH DESCENDER
+Ⱪ → K ; # 2C69;LATIN CAPITAL LETTER K WITH DESCENDER
+ⱪ → k ; # 2C6A;LATIN SMALL LETTER K WITH DESCENDER
+Ⱬ → Z ; # 2C6B;LATIN CAPITAL LETTER Z WITH DESCENDER
+ⱬ → z ; # 2C6C;LATIN SMALL LETTER Z WITH DESCENDER
+Ɱ → M ; # 2C6E;LATIN CAPITAL LETTER M WITH HOOK
+ⱱ → v ; # 2C71;LATIN SMALL LETTER V WITH RIGHT HOOK
+Ⱳ → W ; # 2C72;LATIN CAPITAL LETTER W WITH HOOK
+ⱳ → w ; # 2C73;LATIN SMALL LETTER W WITH HOOK
+ⱴ → v ; # 2C74;LATIN SMALL LETTER V WITH CURL
+ⱸ → e ; # 2C78;LATIN SMALL LETTER E WITH NOTCH
+ⱺ → o ; # 2C7A;LATIN SMALL LETTER O WITH LOW RING INSIDE
+Ȿ → S ; # 2C7E;LATIN CAPITAL LETTER S WITH SWASH TAIL
+Ɀ → Z ; # 2C7F;LATIN CAPITAL LETTER Z WITH SWASH TAIL
+ꜰ → F ; # A730;LATIN LETTER SMALL CAPITAL F
+ꜱ → S ; # A731;LATIN LETTER SMALL CAPITAL S
+Ꜳ → AA ; # A732;LATIN CAPITAL LETTER AA
+ꜳ → aa ; # A733;LATIN SMALL LETTER AA
+Ꜵ → AO ; # A734;LATIN CAPITAL LETTER AO
+ꜵ → ao ; # A735;LATIN SMALL LETTER AO
+Ꜷ → AU ; # A736;LATIN CAPITAL LETTER AU
+ꜷ → au ; # A737;LATIN SMALL LETTER AU
+Ꜹ → AV ; # A738;LATIN CAPITAL LETTER AV
+ꜹ → av ; # A739;LATIN SMALL LETTER AV
+Ꜻ → AV ; # A73A;LATIN CAPITAL LETTER AV WITH HORIZONTAL BAR
+ꜻ → av ; # A73B;LATIN SMALL LETTER AV WITH HORIZONTAL BAR
+Ꜽ → AY ; # A73C;LATIN CAPITAL LETTER AY
+ꜽ → ay ; # A73D;LATIN SMALL LETTER AY
+Ꝁ → K ; # A740;LATIN CAPITAL LETTER K WITH STROKE
+ꝁ → k ; # A741;LATIN SMALL LETTER K WITH STROKE
+Ꝃ → K ; # A742;LATIN CAPITAL LETTER K WITH DIAGONAL STROKE
+ꝃ → k ; # A743;LATIN SMALL LETTER K WITH DIAGONAL STROKE
+Ꝅ → K ; # A744;LATIN CAPITAL LETTER K WITH STROKE AND DIAGONAL STROKE
+ꝅ → k ; # A745;LATIN SMALL LETTER K WITH STROKE AND DIAGONAL STROKE
+Ꝇ → L ; # A746;LATIN CAPITAL LETTER BROKEN L
+ꝇ → l ; # A747;LATIN SMALL LETTER BROKEN L
+Ꝉ → L ; # A748;LATIN CAPITAL LETTER L WITH HIGH STROKE
+ꝉ → l ; # A749;LATIN SMALL LETTER L WITH HIGH STROKE
+Ꝋ → O ; # A74A;LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY
+ꝋ → o ; # A74B;LATIN SMALL LETTER O WITH LONG STROKE OVERLAY
+Ꝍ → O ; # A74C;LATIN CAPITAL LETTER O WITH LOOP
+ꝍ → o ; # A74D;LATIN SMALL LETTER O WITH LOOP
+Ꝏ → OO ; # A74E;LATIN CAPITAL LETTER OO
+ꝏ → oo ; # A74F;LATIN SMALL LETTER OO
+Ꝑ → P ; # A750;LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER
+ꝑ → p ; # A751;LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
+Ꝓ → P ; # A752;LATIN CAPITAL LETTER P WITH FLOURISH
+ꝓ → p ; # A753;LATIN SMALL LETTER P WITH FLOURISH
+Ꝕ → P ; # A754;LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
+ꝕ → p ; # A755;LATIN SMALL LETTER P WITH SQUIRREL TAIL
+Ꝗ → Q ; # A756;LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
+ꝗ → q ; # A757;LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
+Ꝙ → Q ; # A758;LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE
+ꝙ → q ; # A759;LATIN SMALL LETTER Q WITH DIAGONAL STROKE
+Ꝟ → V ; # A75E;LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
+ꝟ → v ; # A75F;LATIN SMALL LETTER V WITH DIAGONAL STROKE
+Ꝡ → VY ; # A760;LATIN CAPITAL LETTER VY
+ꝡ → vy ; # A761;LATIN SMALL LETTER VY
+Ꝥ → TH ; # A764;LATIN CAPITAL LETTER THORN WITH STROKE
+ꝥ → th ; # A765;LATIN SMALL LETTER THORN WITH STROKE
+Ꝧ → TH ; # A766;LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
+ꝧ → th ; # A767;LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
+ꝱ → d ; # A771;LATIN SMALL LETTER DUM
+ꝲ → l ; # A772;LATIN SMALL LETTER LUM
+ꝳ → m ; # A773;LATIN SMALL LETTER MUM
+ꝴ → n ; # A774;LATIN SMALL LETTER NUM
+ꝵ → r ; # A775;LATIN SMALL LETTER RUM
+ꝶ → R ; # A776;LATIN LETTER SMALL CAPITAL RUM
+ꝷ → t ; # A777;LATIN SMALL LETTER TUM
+Ꝺ → D ; # A779;LATIN CAPITAL LETTER INSULAR D
+ꝺ → d ; # A77A;LATIN SMALL LETTER INSULAR D
+Ꝼ → F ; # A77B;LATIN CAPITAL LETTER INSULAR F
+ꝼ → f ; # A77C;LATIN SMALL LETTER INSULAR F
+Ꞇ → T ; # A786;LATIN CAPITAL LETTER INSULAR T
+ꞇ → t ; # A787;LATIN SMALL LETTER INSULAR T
+Ꞑ → N ; # A790;LATIN CAPITAL LETTER N WITH DESCENDER
+ꞑ → n ; # A791;LATIN SMALL LETTER N WITH DESCENDER
+Ꞓ → C ; # A792;LATIN CAPITAL LETTER C WITH BAR
+ꞓ → c ; # A793;LATIN SMALL LETTER C WITH BAR
+Ꞡ → G ; # A7A0;LATIN CAPITAL LETTER G WITH OBLIQUE STROKE
+ꞡ → g ; # A7A1;LATIN SMALL LETTER G WITH OBLIQUE STROKE
+Ꞣ → K ; # A7A2;LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
+ꞣ → k ; # A7A3;LATIN SMALL LETTER K WITH OBLIQUE STROKE
+Ꞥ → N ; # A7A4;LATIN CAPITAL LETTER N WITH OBLIQUE STROKE
+ꞥ → n ; # A7A5;LATIN SMALL LETTER N WITH OBLIQUE STROKE
+Ꞧ → R ; # A7A6;LATIN CAPITAL LETTER R WITH OBLIQUE STROKE
+ꞧ → r ; # A7A7;LATIN SMALL LETTER R WITH OBLIQUE STROKE
+Ꞩ → S ; # A7A8;LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
+ꞩ → s ; # A7A9;LATIN SMALL LETTER S WITH OBLIQUE STROKE
+Ɦ → H ; # A7AA;LATIN CAPITAL LETTER H WITH HOOK
 # Presentation forms
 ﬀ → ff ; # FB00;LATIN SMALL LIGATURE FF (compat)
 ﬁ → fi ; # FB01;LATIN SMALL LIGATURE FI (compat)
@@ -311,8 +410,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 ₣ → 'Fr.' ; # 20A3;FRENCH FRANC SIGN (from ‹character-fallback›)
 ₤ → 'L.' ; # 20A4;LIRA SIGN (from ‹character-fallback›)
 ₧ → Pts ; # 20A7;PESETA SIGN (from ‹character-fallback›)
-₺ → TL ; # 20BA;TURKISH LIRA SIGN (from ‹character-fallback›)
 ₹ → Rs ; # 20B9;INDIAN RUPEE SIGN (from ‹character-fallback›)
+₺ → TL ; # 20BA;TURKISH LIRA SIGN (from ‹character-fallback›)
 ℀ → 'a/c' ; # 2100;ACCOUNT OF (compat)
 ℁ → 'a/s' ; # 2101;ADDRESSED TO THE SUBJECT (compat)
 ℂ → C ; # 2102;DOUBLE-STRUCK CAPITAL C (compat)
@@ -329,6 +428,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 ℓ → l ; # 2113;SCRIPT SMALL L (compat)
 ℕ → N ; # 2115;DOUBLE-STRUCK CAPITAL N (compat)
 № → No ; # 2116;NUMERO SIGN (compat)
+℗ → '(P)' ; # 2117;SOUND RECORDING COPYRIGHT (later addition)
+℘ → P ; # 2118;SCRIPT CAPITAL P (later addition)
 ℙ → P ; # 2119;DOUBLE-STRUCK CAPITAL P (compat)
 ℚ → Q ; # 211A;DOUBLE-STRUCK CAPITAL Q (compat)
 ℛ → R ; # 211B;SCRIPT CAPITAL R (compat)
@@ -465,6 +566,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 ⒳ → '(x)' ; # 24B3;PARENTHESIZED LATIN SMALL LETTER X (compat)
 ⒴ → '(y)' ; # 24B4;PARENTHESIZED LATIN SMALL LETTER Y (compat)
 ⒵ → '(z)' ; # 24B5;PARENTHESIZED LATIN SMALL LETTER Z (compat)
+🄐 → '(A)' ; # 1F110;PARENTHESIZED LATIN CAPITAL LETTER A (compat)
+🄑 → '(B)' ; # 1F111;PARENTHESIZED LATIN CAPITAL LETTER B (compat)
+🄒 → '(C)' ; # 1F112;PARENTHESIZED LATIN CAPITAL LETTER C (compat)
+🄓 → '(D)' ; # 1F113;PARENTHESIZED LATIN CAPITAL LETTER D (compat)
+🄔 → '(E)' ; # 1F114;PARENTHESIZED LATIN CAPITAL LETTER E (compat)
+🄕 → '(F)' ; # 1F115;PARENTHESIZED LATIN CAPITAL LETTER F (compat)
+🄖 → '(G)' ; # 1F116;PARENTHESIZED LATIN CAPITAL LETTER G (compat)
+🄗 → '(H)' ; # 1F117;PARENTHESIZED LATIN CAPITAL LETTER H (compat)
+🄘 → '(I)' ; # 1F118;PARENTHESIZED LATIN CAPITAL LETTER I (compat)
+🄙 → '(J)' ; # 1F119;PARENTHESIZED LATIN CAPITAL LETTER J (compat)
+🄚 → '(K)' ; # 1F11A;PARENTHESIZED LATIN CAPITAL LETTER K (compat)
+🄛 → '(L)' ; # 1F11B;PARENTHESIZED LATIN CAPITAL LETTER L (compat)
+🄜 → '(M)' ; # 1F11C;PARENTHESIZED LATIN CAPITAL LETTER M (compat)
+🄝 → '(N)' ; # 1F11D;PARENTHESIZED LATIN CAPITAL LETTER N (compat)
+🄞 → '(O)' ; # 1F11E;PARENTHESIZED LATIN CAPITAL LETTER O (compat)
+🄟 → '(P)' ; # 1F11F;PARENTHESIZED LATIN CAPITAL LETTER P (compat)
+🄠 → '(Q)' ; # 1F120;PARENTHESIZED LATIN CAPITAL LETTER Q (compat)
+🄡 → '(R)' ; # 1F121;PARENTHESIZED LATIN CAPITAL LETTER R (compat)
+🄢 → '(S)' ; # 1F122;PARENTHESIZED LATIN CAPITAL LETTER S (compat)
+🄣 → '(T)' ; # 1F123;PARENTHESIZED LATIN CAPITAL LETTER T (compat)
+🄤 → '(U)' ; # 1F124;PARENTHESIZED LATIN CAPITAL LETTER U (compat)
+🄥 → '(V)' ; # 1F125;PARENTHESIZED LATIN CAPITAL LETTER V (compat)
+🄦 → '(W)' ; # 1F126;PARENTHESIZED LATIN CAPITAL LETTER W (compat)
+🄧 → '(X)' ; # 1F127;PARENTHESIZED LATIN CAPITAL LETTER X (compat)
+🄨 → '(Y)' ; # 1F128;PARENTHESIZED LATIN CAPITAL LETTER Y (compat)
+🄩 → '(Z)' ; # 1F129;PARENTHESIZED LATIN CAPITAL LETTER Z (compat)
+
+
 #
 # Roman numerals
 #
@@ -506,6 +635,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 ¼ → ' 1/4' ; # 00BC;VULGAR FRACTION ONE QUARTER (from ‹character-fallback›)
 ½ → ' 1/2' ; # 00BD;VULGAR FRACTION ONE HALF (from ‹character-fallback›)
 ¾ → ' 3/4' ; # 00BE;VULGAR FRACTION THREE QUARTERS (from ‹character-fallback›)
+⅐ → ' 1/7' ; # 2150;VULGAR FRACTION ONE SEVENTH
+⅑ → ' 1/9' ; # 2151;VULGAR FRACTION ONE NINTH
+⅒ → ' 1/10' ; # 2151;VULGAR FRACTION ONE TENTH
 ⅓ → ' 1/3' ; # 2153;VULGAR FRACTION ONE THIRD (from ‹character-fallback›)
 ⅔ → ' 2/3' ; # 2154;VULGAR FRACTION TWO THIRDS (from ‹character-fallback›)
 ⅕ → ' 1/5' ; # 2155;VULGAR FRACTION ONE FIFTH (from ‹character-fallback›)
@@ -519,6 +651,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 ⅝ → ' 5/8' ; # 215D;VULGAR FRACTION FIVE EIGHTHS (from ‹character-fallback›)
 ⅞ → ' 7/8' ; # 215E;VULGAR FRACTION SEVEN EIGHTHS (from ‹character-fallback›)
 ⅟ → ' 1/' ; # 215F;FRACTION NUMERATOR ONE (from ‹character-fallback›)
+↉ → ' 0/3' ; # 2189;VULGAR FRACTION ZERO THIRDS
 #
 # Enclosed numeric
 #
@@ -542,6 +675,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 ⒅ → '(18)' ; # 2485;PARENTHESIZED NUMBER EIGHTEEN (compat)
 ⒆ → '(19)' ; # 2486;PARENTHESIZED NUMBER NINETEEN (compat)
 ⒇ → '(20)' ; # 2487;PARENTHESIZED NUMBER TWENTY (compat)
+🄀 → '0.' ; # 1F100;DIGIT ZERO FULL STOP (compat)
 ⒈ → '1.' ; # 2488;DIGIT ONE FULL STOP (compat)
 ⒉ → '2.' ; # 2489;DIGIT TWO FULL STOP (compat)
 ⒊ → '3.' ; # 248A;DIGIT THREE FULL STOP (compat)
@@ -562,6 +696,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 ⒙ → '18.' ; # 2499;NUMBER EIGHTEEN FULL STOP (compat)
 ⒚ → '19.' ; # 249A;NUMBER NINETEEN FULL STOP (compat)
 ⒛ → '20.' ; # 249B;NUMBER TWENTY FULL STOP (compat)
+🄁 → '0,' ; # 1F101;DIGIT ZERO COMMA (compat)
+🄂 → '1,' ; # 1F102;DIGIT ONE COMMA (compat)
+🄃 → '2,' ; # 1F103;DIGIT TWO COMMA (compat)
+🄄 → '3,' ; # 1F104;DIGIT THREE COMMA (compat)
+🄅 → '4,' ; # 1F105;DIGIT FOUR COMMA (compat)
+🄆 → '5,' ; # 1F106;DIGIT FIVE COMMA (compat)
+🄇 → '6,' ; # 1F107;DIGIT SIX COMMA (compat)
+🄈 → '7,' ; # 1F108;DIGIT SEVEN COMMA (compat)
+🄉 → '8,' ; # 1F109;DIGIT EIGHT COMMA (compat)
+🄊 → '9,' ; # 1F10A;DIGIT NINE COMMA (compat)
 #
 # Other numeric (ideographic and fullwidth)
 #
@@ -637,6 +781,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 #
 # Other misc punctuation and symbols
 #
+¡ → '!' ; # 00A1;INVERTED EXCLAMATION MARK
+¿ → '?' ; # 00BF;INVERTED QUESTION MARK
 ˂ → '<' ; # 02C2;MODIFIER LETTER LEFT ARROWHEAD
 ˃ → '>' ; # 02C3;MODIFIER LETTER RIGHT ARROWHEAD
 ˄ → '^' ; # 02C4;MODIFIER LETTER UP ARROWHEAD
@@ -655,6 +801,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 ⁈ → '?!' ; # 2048;QUESTION EXCLAMATION MARK (compat)
 ⁉ → '!?' ; # 2049;EXCLAMATION QUESTION MARK (compat)
 ⁎ → '*' ; # 204E;LOW ASTERISK
+\← → '<-' ; # 2190;LEFTWARDS ARROW
+\→ → '->' ; # 2192;RIGHTWARDS ARROW
+\↔ → '<->' ; # 2194;LEFT RIGHT ARROW
+￩ → '<-' ; # FFE9;HALFWIDTH LEFTWARDS ARROW
+￫ → '->' ; # FFEB;HALFWIDTH RIGHTWARDS ARROW
 # CJK
 、 → ',' ; # 3001;IDEOGRAPHIC COMMA
 。 → '.' ; # 3002;IDEOGRAPHIC FULL STOP
@@ -751,6 +902,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 #
 # Other math operators (non-ASCII-range)
 #
+± → '+/-' ; # 00B1;PLUS-MINUS SIGN
 × → '*' ; # 00D7;MULTIPLICATION SIGN
 ÷ → '/' ; # 00F7;DIVISION SIGN
 ˖ → '+' ; # 02D6;MODIFIER LETTER PLUS SIGN
